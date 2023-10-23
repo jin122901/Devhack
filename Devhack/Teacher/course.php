@@ -32,7 +32,7 @@
                 </div>
             </div>
             <br>
-            <h2 class="Pagetitle"><b>Welcome To AlwaysAStudents!</b></h2>
+            <h2 class="Pagetitle"><b>Courses</b></h2>
             <div class="container">
                 <br>
                 <hr>
