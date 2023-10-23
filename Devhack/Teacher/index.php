@@ -10,12 +10,12 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Include Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-	<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-	<link rel="stylesheet" href="assets/CSS/sidebar.css">
-	<link rel="stylesheet" href="assets/CSS/index.css">
+    <link rel="stylesheet" href="assets/CSS/sidebar.css">
+    <link rel="stylesheet" href="assets/CSS/index.css">
     <link rel="stylesheet" href="assets/CSS/slideshow.css">
     <link rel="stylesheet" href="assets/CSS/footer.css">
     <title>Home</title>
@@ -23,16 +23,9 @@
 
 <body>
     <div class="containers">
-        <?php include("sidebar.php")?>
+        <?php include("sidebar.php") ?>
         <div class="main active">
-            <div class="topbar">
-                <div class="toggle">
-                    <ion-icon name="menu-outline"></ion-icon>
-                </div>
-                <div class="user">
-                    <img src="assets/Images/user.png" alt="" />
-                </div>
-            </div>
+            <?php include "topnav.php" ?>
 
             <div class="slideshow">
                 <div class="mySlides">
@@ -81,8 +74,8 @@
                     <form>
                         <div class="mb-3">
                             <img src="assets/Images/courseimgae.png" class="card-img-top" alt="...">
-							<br><br>
-							<h5>Title</h5>
+                            <br><br>
+                            <h5>Title</h5>
                         </div>
                         <div class="mb-3">
                             <p>Description....</p>
@@ -90,7 +83,7 @@
                         <div class="mb-3">
                             <p>Price</p>
                         </div>
-                        <div style="text-align:center" >
+                        <div style="text-align:center">
                             <button type="submit" class="btn btn-primary">Buy Now</button>
                         </div>
                     </form>

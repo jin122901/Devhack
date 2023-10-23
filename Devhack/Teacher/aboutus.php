@@ -25,14 +25,7 @@
     <div class="containers">
         <?php include("sidebar.php")?>
         <div class="main active">
-            <div class="topbar">
-                <div class="toggle">
-                    <ion-icon name="menu-outline"></ion-icon>
-                </div>
-                <div class="user">
-                    <img src="assets/Images/user.png" alt="" />
-                </div>
-            </div>
+            <?php include "topnav.php" ?>
             
             <div class="slideshow">
                 <div class="mySlides">
