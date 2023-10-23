@@ -16,8 +16,6 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 	<link rel="stylesheet" href="assets/CSS/sidebar.css">
 	<link rel="stylesheet" href="assets/CSS/index.css">
-    <link rel="stylesheet" href="assets/CSS/slideshow.css">
-    <link rel="stylesheet" href="assets/CSS/footer.css">
     <title>Home</title>
 </head>
 
@@ -33,15 +31,8 @@
                     <img src="assets/Images/user.png" alt="" />
                 </div>
             </div>
-
-            <div class="slideshow">
-                <div class="mySlides">
-                    <img src="assets/Images/mainbg.png" alt="">
-                </div>
-            </div>
-
             <br>
-            <h2 class="Pagetitle"><b>Welcome To AlwaysAStudents!</b></h2>
+            <h2 class="Pagetitle"><b>Courses</b></h2>
             <div class="container">
                 <br>
                 <hr>
