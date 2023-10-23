@@ -23,14 +23,7 @@
     <div class="containers">
         <?php include("sidebar.php")?>
         <div class="main active">
-            <div class="topbar">
-                <div class="toggle">
-                    <ion-icon name="menu-outline"></ion-icon>
-                </div>
-                <div class="user">
-                    <img src="assets/Images/user.png" alt="" />
-                </div>
-            </div>
+            <?php include "topnav.php" ?>
             <br>
             <h2 class="Pagetitle"><b>Courses</b></h2>
             <div class="container">
