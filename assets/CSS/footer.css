@@ -1,0 +1,22 @@
+.footer {
+    padding: 10px 20px;
+    background-color: grey;
+    color: white;
+}
+
+.footer .SocialMedia a {
+    cursor: pointer;
+}
+
+.footer .SocialMedia .SocialMediaTab img{
+    transition: transform .2s; /* Animation */
+    margin-left: 1rem;
+}
+
+.footer .SocialMedia .SocialMediaTab img:hover{
+    transform: scale(1.5);
+}
+
+.footer .resolution_title {
+    text-align: center;
+}
