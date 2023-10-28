@@ -30,22 +30,24 @@
             session_start();
             if (isset($_SESSION['TcMail']) && isset($_SESSION['TcPass'])) {
                 include("Teacher/teacher_sidebar_session.php");
-            } elseif (isset($_SESSION['TcMail']) && isset($_SESSION['TcPass'])) {
-
+            } elseif (isset($_SESSION['uMail']) && isset($_SESSION['uPass'])) {
+                include("Student/student_sidebar_session.php");
             } else {
                 include("sidebar.php");
             }
 
         ?>
         <div class="main active">
+            
             <?php 
-            if (isset($_SESSION['TcMail']) && isset($_SESSION['TcPass'])) {
-                include("Teacher/teacher_topnav_session.php");
-            } elseif (isset($_SESSION['TcMail']) && isset($_SESSION['TcPass'])) {
-
-            } else {
-                include ("topnav.php");
-            }
+                if (isset($_SESSION['TcMail']) && isset($_SESSION['TcPass'])) {
+                    include("Teacher/teacher_topnav_session.php");
+                } elseif (isset($_SESSION['uMail']) && isset($_SESSION['uPass'])) {
+                    include("Student/student_topnav_session.php");
+                } else {
+                    include ("topnav.php");
+                }
+                
              ?>
 
             <div class="slideshow">

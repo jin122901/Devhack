@@ -7,11 +7,23 @@
                     <h5>Need help?</h5>
                     <br>
                     <div class="SocialMediaTab">
-                        <a href=""><img src="assets/Images/Facebook_Logo_(2019).png" alt="facebook" width="25px" height="25px"></a>
-                        <a href=""><img src="assets/Images/240px-Instagram_icon.png" alt="insta" width="25px" height="25px"></a>
-                        <a href="https://github.com/TommyYuan0215"><img src="assets/Images/github.png" alt="github" width="25px" height="25px"></a>
-                        <a href=""><img src="assets/Images/Whatsapp.png" alt="whatsapp" width="25px" height="25px"></a>
-                        <a href=""><img src="assets/Images/linkedin.png" alt="linkedin" width="25px" height="25px"></a>
+                        <?php 
+                            if(isset($_SESSION['TcMail']) && isset($_SESSION['TcPass']) || isset($_SESSION['uMail']) && isset($_SESSION['uPass']))  {
+                        ?>
+                            <a href=""><img src="../assets/Images/Facebook_Logo_(2019).png" alt="facebook" width="25px" height="25px"></a>
+                            <a href=""><img src="../assets/Images/240px-Instagram_icon.png" alt="insta" width="25px" height="25px"></a>
+                            <a href="https://github.com/TommyYuan0215"><img src="../assets/Images/github.png" alt="github" width="25px" height="25px"></a>
+                            <a href=""><img src="../assets/Images/Whatsapp.png" alt="whatsapp" width="25px" height="25px"></a>
+                            <a href=""><img src="../assets/Images/linkedin.png" alt="linkedin" width="25px" height="25px"></a>
+                        <?php 
+                            } else {
+                        ?>
+                            <a href=""><img src="./assets/Images/Facebook_Logo_(2019).png" alt="facebook" width="25px" height="25px"></a>
+                            <a href=""><img src="./assets/Images/240px-Instagram_icon.png" alt="insta" width="25px" height="25px"></a>
+                            <a href="https://github.com/TommyYuan0215"><img src="./assets/Images/github.png" alt="github" width="25px" height="25px"></a>
+                            <a href=""><img src="./assets/Images/Whatsapp.png" alt="whatsapp" width="25px" height="25px"></a>
+                            <a href=""><img src="./assets/Images/linkedin.png" alt="linkedin" width="25px" height="25px"></a>
+                        <?php } ?>
                     </div>
                     <br>
                 </div>
