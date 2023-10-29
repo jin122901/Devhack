@@ -60,5 +60,19 @@
         echo "Data Insert failed: (" . $conn->errno . ") " . $conn->error;
     }
 
+    // Student
+    $password = "123";
+    $newhash = password_hash($password,PASSWORD_DEFAULT);
+
+    // If ExampleTeacher data is not exist create one
+	$queryAddExpStudent = "INSERT IGNORE INTO users(UsrEmail, UsrPassword, UsrName, UsrType) VALUES
+        ('student@123', '$newhash' , 'Tan', '2')";
+
+    
+
+    if(!$conn->query($queryAddExpStudent)){
+        echo "Data Insert failed: (" . $conn->errno . ") " . $conn->error;
+    }
+
 
 ?>

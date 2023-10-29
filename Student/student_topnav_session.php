@@ -1,12 +1,12 @@
 <?php 
 	require('include/dbconn.php');
 
-	if (!isset($_SESSION['TcMail'])|| !isset($_SESSION['TcPass'])) {
+	if (!isset($_SESSION['uMail']) || !isset($_SESSION['uPass'])) {
         header('location: ../index.php');
     }
 
-    $name = $_SESSION['TcName'];
-	$email = $_SESSION['TcMail'];
+    $name = $_SESSION['uMail'];
+	$email = $_SESSION['uPass'];
 	$sql_statement1 = "SELECT * FROM users WHERE UsrEmail='$email'";
 
     $execqry1 = mysqli_query($conn,$sql_statement1);

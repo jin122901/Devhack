@@ -42,15 +42,16 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 	<link rel="stylesheet" href="../assets/CSS/sidebar.css">
 	<link rel="stylesheet" href="../assets/CSS/index.css">
+    <link rel="stylesheet" href="../assets/CSS/footer.css">
     <link rel="icon" href="../assets/Images/logo.ico" />
     <title>Dashboard - AlwaysAStudents! </title>
 </head>
 
 <body>
     <div class="containers">
-        <?php include("teacher_sidebar.php")?>
+        <?php include("../sidebar.php")?>
         <div class="main active">
-            <?php include "teacher_topnav.php" ?>
+            <?php include "../topnav.php" ?>
             <br>
             <div class="container">
                 <br>
@@ -77,6 +78,11 @@
                     <?php } ?>
                 </div>
             </div>
+
+            <!-- Footer -->
+            <br>
+            <br>
+            <?php include "../footer.php" ?>
         </div>
     </div>
 
@@ -110,6 +116,7 @@
         </div>
     </div>
 
+    
     <!-- Scripts should be included after the content -->
     <script src="../assets/js/main.js"></script>
 </body>

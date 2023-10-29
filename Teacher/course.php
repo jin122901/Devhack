@@ -1,3 +1,29 @@
+<?php 
+    session_start();
+	require('../include/dbconn.php');
+
+	if (!isset($_SESSION['TcMail'])|| !isset($_SESSION['TcPass'])) {
+        header('location: ../index.php');
+    }
+
+    $name = $_SESSION['TcName'];
+	$email = $_SESSION['TcMail'];
+	$sql_statement1 = "SELECT * FROM users WHERE UsrEmail='$email'";
+
+    $execqry1 = mysqli_query($conn,$sql_statement1);
+		
+	while ($rowresult = mysqli_fetch_assoc($execqry1)){
+		$photo=$rowresult['UsrImage'];
+		$name2 = $rowresult['UsrName'];
+    }
+
+    if(empty($photo)){
+		$image="../assets/Images/user.png.jpg";
+	}else{
+		$image="data:image;base64,".$photo;
+	}
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -16,15 +42,16 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 	<link rel="stylesheet" href="../assets/CSS/sidebar.css">
 	<link rel="stylesheet" href="../assets/CSS/index.css">
+    <link rel="stylesheet" href="../assets/CSS/footer.css">
     <link rel="icon" href="../assets/Images/logo.ico" />
     <title>Home</title>
 </head>
 
 <body>
     <div class="containers">
-        <?php include("teacher_sidebar.php")?>
+        <?php include("../sidebar.php")?>
         <div class="main active">
-            <?php include "teacher_topnav.php" ?>
+            <?php include "../topnav.php" ?>
             <br>
             <h2 class="Pagetitle"><b>Courses</b></h2>
             <div class="container">
@@ -51,6 +78,11 @@
                     <?php } ?>
                 </div>
             </div>
+
+            <!-- Footer -->
+            <br>
+            <br>
+            <?php include "../footer.php" ?>
         </div>
     </div>
 
@@ -85,7 +117,7 @@
     </div>
 
     <!-- Scripts should be included after the content -->
-    <script src="assets/js/main.js"></script>
+    <script src="../assets/js/main.js"></script>
 </body>
 
 </html>

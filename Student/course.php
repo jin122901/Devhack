@@ -44,7 +44,8 @@
 	<link rel="stylesheet" href="../assets/CSS/index.css">
     <link rel="stylesheet" href="../assets/CSS/footer.css">
     <link rel="icon" href="../assets/Images/logo.ico" />
-    <title>Dashboard - AlwaysAStudents! </title>
+    <title>Course Selection - AlwaysAStudents! </title>
+    <title>Home</title>
 </head>
 
 <body>
@@ -53,12 +54,13 @@
         <div class="main active">
             <?php include "../topnav.php" ?>
             <br>
+            <br>
+            <h2 class="Pagetitle"><b>Courses Selection</b></h2>
             <div class="container">
                 <br>
-                <h1>Hello, <?php echo $name2 ?></h1>
+                
                 <hr>
                 <br>
-                <h4>Enrolled Classes</h4>
                 <div class="row">
                     <?php for ($i = 1; $i <= 4; $i++) { ?>
                         <div class="col-md-3">
@@ -98,7 +100,7 @@
                 <div class="modal-body">
                     <form>
                         <div class="mb-3">
-                            <img src="../assets/Images/courseimgae.png" class="card-img-top" alt="...">
+                            <img src="assets/Images/courseimgae.png" class="card-img-top" alt="...">
 							<br><br>
 							<h5>Title</h5>
                         </div>
@@ -117,7 +119,6 @@
         </div>
     </div>
 
-    
     <!-- Scripts should be included after the content -->
     <script src="../assets/js/main.js"></script>
 </body>

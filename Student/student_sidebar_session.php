@@ -20,7 +20,7 @@
         </li>
 
         <li>
-            <a href="Teacher/dashboard.php" >
+            <a href="Student/dashboard.php" >
                 <span class="icon" >
                     <i class='bx bx-grid-alt'></i>
                 </span>
@@ -29,7 +29,7 @@
         </li>
 
         <li>
-            <a href="Teacher/course.php">
+            <a href="Student/course.php">
                 <span class="icon">
                     <ion-icon name="cube-outline" ></ion-icon>
                 </span>

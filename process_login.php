@@ -34,17 +34,12 @@
                 }
                 
                 // If verified usrtype is Student
-                else if ($retval_usertype == "2" && $compare_pwd && $retval_userstatus == "1") {
+                else if ($retval_usertype == "2" && $compare_pwd ) {
                     // echo "<br>Login successfull";
                     $_SESSION['uMail'] = $retval_usermail;//declare variable for session                
                     $_SESSION['uName'] = $retval_username;
                     $_SESSION['uPass'] = $compare_pwd;
                     echo "<script>document.location='Student/dashboard.php'</script>";
-                }
-                
-                else if ($retval_usertype == "1" && $compare_pwd && $retval_userstatus == "0") { 
-                    $errors['no-data'] = "NO DATA FOUND!";
-                    // echo "<script>alert('');document.location='index.php'</script>";
                 }
                 
                 else {
