@@ -2,20 +2,26 @@
     session_start();
 	require('include/dbconn.php');
 
-	if (!isset($_SESSION['TcMail'])|| !isset($_SESSION['TcPass'])) {
-        header('location: ../index.php');
-    }
+	// if (!isset($_SESSION['TcMail']) || !isset($_SESSION['TcPass']) || !isset($_SESSION['uMail'])|| !isset($_SESSION['uPass'])) {
+    //     header('location: index.php');
+    // }
 
-	$name = $_SESSION['TcName'];
-	$email = $_SESSION['TcMail'];
-		
+	if (isset($_SESSION['uMail']) && isset($_SESSION['uPass'])) {
+		$name = $_SESSION['uName'];
+		$email = $_SESSION['uMail'];
 
+	} else if ((isset($_SESSION['TcMail']) && isset($_SESSION['TcPass']))) {
+		$name = $_SESSION['TcName'];
+		$email = $_SESSION['TcMail'];
+	}
+	
 	$sql_statement1 = "SELECT * FROM users WHERE UsrEmail='$email'";
 
     $execqry1 = mysqli_query($conn,$sql_statement1);
 		
 	while ($rowresult = mysqli_fetch_assoc($execqry1)){
 		$photo=$rowresult['UsrImage'];
+		$email2 = $rowresult['UsrEmail'];
 		$name2 = $rowresult['UsrName'];
     }
 
@@ -48,11 +54,22 @@
    </head>
 <body>
 	<div class="containers">
-        <?php include("Teacher/teacher_sidebar_session.php");?>
+        <?php 
+			if (isset($_SESSION['TcMail']) && isset($_SESSION['TcPass'])) {
+				include("Teacher/teacher_sidebar_session.php");
+			} else if (isset($_SESSION['uMail']) && isset($_SESSION['uPass'])) {
+				include("Student/student_sidebar_session.php");
+			}
 			
-        <div class="main active">
-			
-            <?php include("Teacher/teacher_topnav_session.php");?>
+		?>		
+        <div class="main active">		
+            <?php 
+				if (isset($_SESSION['TcMail']) && isset($_SESSION['TcPass'])) {
+					include("Teacher/teacher_topnav_session.php");
+				} else if (isset($_SESSION['uMail']) && isset($_SESSION['uPass'])) {
+					include("Student/student_topnav_session.php");
+				}		
+			?>
             <br>
 			<br>
 			<br>
@@ -93,11 +110,11 @@
 					
 				<img src="<?php echo $image; ?>" class="rounded-circle mx-auto d-block" alt="photo" width="210" height="210"><br>
 				<a href="" class="btn btn-info btn-sm col-md-1 mx-auto d-block text-center" data-toggle="modal" data-target="#modalAddForm"><i class="fa fa-edit"></i>&nbsp;Upload</a>
-				<form action="../process_updateAcc.php" method="post">
+				<form action="process_updateAcc.php" method="post">
 					<div class="container mt-3"> 
 						<div class="form-group ">
 							<label for="email">Email</label>
-							<input class="form-control" type="text" name="email" readonly value="<?php echo $_SESSION['TcMail'];?>">
+							<input class="form-control" type="text" name="email" readonly value="<?php echo $email2;?>">
 						</div>
 
 						<div class="form-group">

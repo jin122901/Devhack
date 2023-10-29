@@ -1,8 +1,8 @@
-<?php require "process_login.php"; ?>
+<?php require "process_signup.php"; ?>
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Sign In</title>
+  <title>Create New ID@AAS!</title>
   <meta charset="utf-8">
 	<link rel="icon" href="images/iconInno.png">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,29 +19,30 @@
         <br>
         <p class="text-center">AlwaysAStudents! - ID@AAS!</p>
         <br><br>
-				  <a href="index.php" class="text-left menulink" >
-				  &emsp;&emsp;<i class="fa fa-arrow-left" aria-hidden="true"></i>&nbsp;Back to Menu
-				  </a>
 		  </div>
 
         <div class="card-body">
           <h4 class="title text-center mt-4">
-            Login into account
+            Create new ID@AAS!
           </h4>
           <?php
               if(count($errors) > 0){
                   ?>
                   <div class="alert alert-danger text-center">
                       <?php 
-                          foreach($errors as $error){
-                              echo $error;
+                         foreach($errors as $error){
+                             echo $error;
                           }
                       ?>
                   </div>
                   <?php
               }
           ?>
-          <form class="form-box px-3" action="login.php" method="post">
+          <form class="form-box px-3" action="newaccount.php" method="post">
+            <div class="form-input">
+              <span><i class="fa fa-user-o"></i></span>
+              <input type="text" name="name" placeholder="Name" tabindex="10" required>
+            </div>
             <div class="form-input">
               <span><i class="fa fa-envelope-o"></i></span>
               <input type="email" name="email" placeholder="Email Address" tabindex="10" required>
@@ -50,22 +51,24 @@
               <span><i class="fa fa-key"></i></span>
               <input type="password" name="pass" placeholder="Password" required>
             </div>
+            <div class="form-group">
+                <label for="custom1" class="control-label">Position</label>
+                <select class="custom-select" name="type">
+                    <option value="" selected disabled>Choose One</option>
+                    <option value="1">Teacher</option>
+                    <option value="2">Student</option>
+                </select>
+            </div>
             <div class="mb-3">
-              <button type="submit" name="submit" class="btn btn-block text-uppercase">
-                Login
+              <button type="submit" name="createnewacc" class="btn btn-block text-uppercase">
+                Create New Account
               </button>
             </div>
             <div class="float-child-left">
-              <a href="newaccount.php" class="forget-link">
-                Create a New Account
+              <span style="font-size: 18px;">Already have account?</span>&emsp;<a href="login.php" class="forget-link">
+                Login Now
               </a>
-            </div>
-            <div class="float-child-right">
-              <a href="forgot.php" class="forget-link">
-                Forget Password?
-              </a>
-            </div>        
-            
+            </div>            
           </form>
         </div>
       </div>
