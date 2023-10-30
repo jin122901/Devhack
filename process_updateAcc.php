@@ -20,25 +20,25 @@
 			$sqlstatement = "UPDATE users SET UsrName = '$name',UsrPassword ='$new_hashpwd' WHERE UsrEmail='$email'";
 			$execqry = mysqli_query($conn, $sqlstatement);
 			if(isset($_SESSION['TcMail']) && isset($_SESSION['TcPass'])) {
-				echo "<script>alert('Successful Updated');document.location='Teacher/accPage.php'</script>";
+				echo "<script>alert('Successful Updated');document.location='accPage.php'</script>";
 			} elseif (isset($_SESSION['uMail']) && isset($_SESSION['uPass'])) {
-				echo "<script>alert('Successful Updated');document.location='Student/accPage.php'</script>";
+				echo "<script>alert('Successful Updated');document.location='accPage.php'</script>";
 			}
 			
 		}
 		else{
 			if(isset($_SESSION['TcMail']) && isset($_SESSION['TcPass'])) {
-				echo "<script>alert('New password and confirm password no same!');document.location='Teacher/accPage.php'</script>";
+				echo "<script>alert('New password and confirm password no same!');document.location='accPage.php'</script>";
 			} elseif (isset($_SESSION['uMail']) && isset($_SESSION['uPass'])) {
-				echo "<script>alert('New password and confirm password no same!');document.location='Student/accPage.php'</script>";
+				echo "<script>alert('New password and confirm password no same!');document.location='accPage.php'</script>";
 			}
 			
 		}
 	}else{
 		if(isset($_SESSION['TcMail']) && isset($_SESSION['TcPass'])) {
-			echo "<script>alert('Wrong currect password!');document.location='Teacher/accPage.php'</script>";
+			echo "<script>alert('Wrong currect password!');document.location='accPage.php'</script>";
 		} elseif (isset($_SESSION['uMail']) && isset($_SESSION['uPass'])) {
-			echo "<script>alert('Wrong currect password!');document.location='Student/accPage.php'</script>";
+			echo "<script>alert('Wrong currect password!');document.location='accPage.php'</script>";
 		}
 		
 	}

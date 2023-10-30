@@ -58,6 +58,9 @@
                 <h1>Hello, <?php echo $name2 ?></h1>
                 <hr>
                 <br>
+                <div class="">
+
+                </div>
                 <h4>Enrolled Classes</h4>
                 <div class="row">
                     <?php for ($i = 1; $i <= 4; $i++) { ?>
