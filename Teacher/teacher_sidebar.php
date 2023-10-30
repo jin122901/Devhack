@@ -11,67 +11,41 @@
         </li>
 
         <li>
-            <a href="../index.php" >
+            <a href="index.php">
                 <span class="icon" >
-                    <i class='bx bx-home-alt-2'></i>
+                    <ion-icon name="folder-open-outline"></ion-icon>
                 </span>
-                <span class="title">Home</span>
+                <span class="title">Course</span>
             </a>
         </li>
 
         <li>
             <a href="dashboard.php" >
                 <span class="icon" >
-                    <i class='bx bx-grid-alt'></i>
+                    <ion-icon name="chatbox-ellipses-outline"></ion-icon>
                 </span>
-                <span class="title">Dashboard</span>
+                <span class="title">Comunication</span>
             </a>
         </li>
 
         <li>
             <a href="course.php">
                 <span class="icon">
-                    <ion-icon name="cube-outline" ></ion-icon>
+                    <ion-icon name="bar-chart-outline" ></ion-icon>
                 </span>
-                <span class="title">Course</span>
+                <span class="title">Performance</span>
             </a>
         </li>
 
-        <!-- <li>
+         <li>
             <a href="#">
                 <span class="icon">
-                    <ion-icon name="document-text-outline"></ion-icon>
+                    <ion-icon name="hammer-outline"></ion-icon>
                 </span>
-                <span class="title">Delivery Order</span>
+                <span class="title">Tools</span>
             </a>
-        </li> -->
+        </li> 
 
-        <!-- <li>
-            <a href="#">
-                <span class="icon">
-                    <ion-icon name="people-outline"></ion-icon>
-                </span>
-                <span class="title">Customers</span>
-            </a>
-        </li> -->
-
-        <!-- <li>
-            <a href="#">
-                <span class="icon">
-                    <ion-icon name="help-outline"></ion-icon>
-                </span>
-                <span class="title">Help</span>
-            </a>
-        </li> -->
-
-        <!-- <li>
-            <a href="#">
-                <span class="icon">
-                    <ion-icon name="settings-outline"></ion-icon>
-                </span>
-                <span class="title">Settings</span>
-            </a>
-        </li> -->
     </ul>
 </div>
 
