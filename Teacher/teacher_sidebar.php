@@ -11,7 +11,16 @@
         </li>
 
         <li>
-            <a href="index.php">
+            <a href="../index.php" >
+                <span class="icon" >
+                    <i class='bx bx-home-alt-2'></i>
+                </span>
+                <span class="title">Home</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="dashboard.php">
                 <span class="icon" >
                     <ion-icon name="folder-open-outline"></ion-icon>
                 </span>
@@ -37,7 +46,6 @@
             </a>
         </li>
 
-<!--
          <li>
             <a href="#">
                 <span class="icon">
@@ -46,34 +54,7 @@
                 <span class="title">Tools</span>
             </a>
         </li> 
--->
 
-        <!-- <li>
-            <a href="#">
-                <span class="icon">
-                    <ion-icon name="people-outline"></ion-icon>
-                </span>
-                <span class="title">Customers</span>
-            </a>
-        </li> -->
-
-        <!-- <li>
-            <a href="#">
-                <span class="icon">
-                    <ion-icon name="help-outline"></ion-icon>
-                </span>
-                <span class="title">Help</span>
-            </a>
-        </li> -->
-
-        <!-- <li>
-            <a href="#">
-                <span class="icon">
-                    <ion-icon name="settings-outline"></ion-icon>
-                </span>
-                <span class="title">Settings</span>
-            </a>
-        </li> -->
     </ul>
 </div>
 
