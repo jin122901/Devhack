@@ -20,7 +20,7 @@
         </li>
 
         <li>
-            <a href="dashboard.php" >
+            <a href="comunication.php" >
                 <span class="icon" >
                     <ion-icon name="chatbox-ellipses-outline"></ion-icon>
                 </span>
@@ -29,7 +29,7 @@
         </li>
 
         <li>
-            <a href="course.php">
+            <a href="performance.php">
                 <span class="icon">
                     <ion-icon name="bar-chart-outline" ></ion-icon>
                 </span>
@@ -37,6 +37,7 @@
             </a>
         </li>
 
+<!--
          <li>
             <a href="#">
                 <span class="icon">
@@ -45,7 +46,34 @@
                 <span class="title">Tools</span>
             </a>
         </li> 
+-->
 
+        <!-- <li>
+            <a href="#">
+                <span class="icon">
+                    <ion-icon name="people-outline"></ion-icon>
+                </span>
+                <span class="title">Customers</span>
+            </a>
+        </li> -->
+
+        <!-- <li>
+            <a href="#">
+                <span class="icon">
+                    <ion-icon name="help-outline"></ion-icon>
+                </span>
+                <span class="title">Help</span>
+            </a>
+        </li> -->
+
+        <!-- <li>
+            <a href="#">
+                <span class="icon">
+                    <ion-icon name="settings-outline"></ion-icon>
+                </span>
+                <span class="title">Settings</span>
+            </a>
+        </li> -->
     </ul>
 </div>
 
