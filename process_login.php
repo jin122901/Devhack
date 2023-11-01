@@ -30,7 +30,7 @@
                     $_SESSION['TcMail'] = $retval_usermail;//declare variable for session                
                     $_SESSION['TcName'] = $retval_username;
                     $_SESSION['TcPass'] = $retval_pass;
-                    echo "<script>document.location='Teacher/dashboard.php'</script>";
+                    echo "<script>document.location='Teacher/index.php'</script>";
                 }
                 
                 // If verified usrtype is Student
@@ -39,7 +39,7 @@
                     $_SESSION['uMail'] = $retval_usermail;//declare variable for session                
                     $_SESSION['uName'] = $retval_username;
                     $_SESSION['uPass'] = $compare_pwd;
-                    echo "<script>document.location='Student/dashboard.php'</script>";
+                    echo "<script>document.location='Student/index.php'</script>";
                 }
                 
                 else {
