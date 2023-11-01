@@ -83,6 +83,10 @@
                     <?php } ?>
                 </div>
             </div>
+
+            <a class="scroll_to_top" href="#"><ion-icon name="caret-up-outline"></ion-icon></a>
+            <?php include "../assistant.php"?>
+
             <!-- Footer -->
             <br>
             <br>

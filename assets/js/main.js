@@ -40,3 +40,16 @@ document.addEventListener("click", function (event) {
     hideSubMenu();
   }
 });
+
+// Scrolldown to show button top
+let btn_totop = document.querySelector('.scroll_to_top');
+var offset = 200
+
+$(window).on('load scroll', function() {
+    
+    if( $(window).scrollTop() > offset ){
+        $(btn_totop).addClass('showBtn')
+    }else{
+        $(btn_totop).removeClass('showBtn')
+    }
+})

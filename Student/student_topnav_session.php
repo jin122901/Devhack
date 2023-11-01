@@ -17,7 +17,7 @@
     }
 
     if(empty($photo)){
-		$image="../assets/Images/user.png";
+		$image="assets/Images/user.png";
 	}else{
 		$image="data:image;base64,".$photo;
 	}
