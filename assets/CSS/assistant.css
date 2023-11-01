@@ -1,0 +1,113 @@
+.float{
+	position:fixed;
+	width:80px;
+	height:80px;
+	bottom:40px;
+	right:40px;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.float img {
+    width:80px;
+	height:80px;
+}
+
+.hide_desc {
+    position:fixed;
+    text-align: center;
+	width:140px;
+	bottom:65px;
+    right:140px;
+    /* border: 2px solid black; */
+    background-color: bisque;
+    transition: width 1s ease-in,;
+    display: none;
+}
+
+.float:hover {
+    background-color:#6C7B6D;
+	transform: scale(1.25);
+}
+
+.float:hover + .hide_desc {
+    display: block;
+}
+
+.my-float{
+	margin-top:22px;
+}
+
+.assistant_panel {
+    display: none;
+    z-index: 5;
+    position:fixed;
+	width:300px;
+	height:500px;
+	bottom:40px;
+    right:40px;
+    border: 2px solid #6C7B6D;
+    background-color: white;
+}
+
+.pane_header {
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    background-color: #6C7B6D;
+    cursor: pointer;
+}
+
+.chat_area {
+    position: fixed;
+    right: 60px;
+    bottom: 40px;
+}
+
+  
+.form-input input{
+    width: 100%;
+    height: 45px;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    box-shadow: none;
+    border: 1px solid #00000020;
+    border-radius: 50px;
+    outline: none;
+    background: transparent;
+}
+  
+.form-input input::placeholder{
+    color: black;
+    padding-left: 0px;
+}
+  
+.form-input input:focus, .form-input input:valid{
+    border: 2px solid #007bff;
+}
+  
+.form-input input:focus::placeholder{
+    color: #454b69;
+}
+
+.head_assistant {
+    position: relative;
+    top: 10px;
+    margin: 0 10px;
+}
+
+.head_assistant img {
+    width: 30px;
+    height: 30px;
+}
+
+.conversation_assistant {
+    margin: 20px 10px;
+    padding: 5px 15px;
+    background-color: greenyellow;
+}

@@ -3,7 +3,7 @@
         <li>
             <a href="">
                 <span class="icon">
-                    <img src="assets/Images/logo.png" alt="Logo" width="50" height="50">
+                    <img src="../assets/Images/logo.png" alt="Logo" width="50" height="50">
                 </span>
                 <h4 class="navigation_title">AlwaysAStudent!</h4>
             </a>
@@ -11,7 +11,7 @@
         </li>
 
         <li>
-            <a href="./index.php" >
+            <a href="../index.php" >
                 <span class="icon" >
                     <i class='bx bx-home-alt-2'></i>
                 </span>
@@ -20,7 +20,7 @@
         </li>
 
         <li>
-            <a href="Student/index.php" >
+            <a href="index.php">
                 <span class="icon" >
                     <i class='bx bx-grid-alt'></i>
                 </span>
@@ -29,9 +29,9 @@
         </li>
 
         <li>
-            <a href="Student/course.php">
-                <span class="icon">
-                    <ion-icon name="cube-outline" ></ion-icon>
+            <a href="course.php" >
+                <span class="icon" >
+                    <ion-icon name="folder-open-outline"></ion-icon>
                 </span>
                 <span class="title">Course Register</span>
             </a>
@@ -45,6 +45,7 @@
                 <span class="title">Premium Subscription</span>
             </a>
         </li>
+
     </ul>
 </div>
 
