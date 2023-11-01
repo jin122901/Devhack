@@ -58,6 +58,9 @@
                 <h1>Hello, <?php echo $name2 ?></h1>
                 <hr>
                 <br>
+<button class="btn btn-primary d-block" type="button" data-toggle="modal" data-target="#courseUploadModal">Upload Course</button>
+				<br>
+				<br>
                 <div class="row">
                     <?php for ($i = 1; $i <= 4; $i++) { ?>
                         <div class="col-md-3">
@@ -70,7 +73,7 @@
                                         <br>
                                         <br>
                                         <!-- Add a button to open the modal with data-toggle and data-target attributes -->
-                                        <button class="btn btn-primary mx-auto d-block" type="button" data-toggle="modal" data-target="#enrolModal">Enrol</button>
+                                        <button class="btn btn-primary mx-auto d-block" type="button">Manage</button>
                                     </p>
                                 </div>
                             </div>
@@ -89,35 +92,37 @@
         </div>
     </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="enrolModal" tabindex="-1" aria-labelledby="enrolModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="enrolModalLabel">Enrolment Form</h5>
-                    <button type="button" class="btn" data-dismiss="modal" aria-label="Close"><i class='bx bx-x'></i></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="mb-3">
-                            <img src="../assets/Images/courseimgae.png" class="card-img-top" alt="...">
-							<br><br>
-							<h5>Title</h5>
-                        </div>
-                        <div class="mb-3">
-                            <p>Description....</p>
-                        </div>
-                        <div class="mb-3">
-                            <p>Price</p>
-                        </div>
-                        <div style="text-align:center" >
-                            <button type="submit" class="btn btn-primary">Buy Now</button>
-                        </div>
-                    </form>
-                </div>
+    <!-- Modal for uploading a course -->
+<div class="modal fade" id="courseUploadModal" tabindex="-1" aria-labelledby="courseUploadModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="courseUploadModalLabel">Upload a New Course</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Your course upload form goes here -->
+                <form action="upload_course.php" method="POST" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="courseName">Course Name</label>
+                        <input type="text" class="form-control" id="courseName" name="courseName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="courseDescription">Course Description</label>
+                        <textarea class="form-control" id="courseDescription" name="courseDescription" rows="3" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="courseFile">Upload Course File</label>
+                        <input type="file" class="form-control-file" id="courseFile" name="courseFile" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Upload Course</button>
+                </form>
             </div>
         </div>
     </div>
+</div>
 
     
     <!-- Scripts should be included after the content -->
