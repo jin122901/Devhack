@@ -100,8 +100,8 @@
                     <h6>No upcoming activities due</h6>
                 </div>
             </div>
-
-            <?php include "assistant.php" ?>
+            <a class="scroll_to_top" href="#"><ion-icon name="caret-up-outline"></ion-icon></a>
+            <?php include "../assistant.php" ?>
             <!-- Footer -->
             <br>
             <br>

@@ -20,7 +20,11 @@
         }
 
         if(empty($photo)){
-            $image="assets/Images/user.png";
+            if(isset($_SESSION['TcMail']) || isset($_SESSION['TcPass']) || isset($_SESSION['uMail']) || isset($_SESSION['uPass'])) {
+                $image="../assets/Images/user.png";
+            } else {
+                $image="assets/Images/user.png";
+            }
         }else{
             $image="data:image;base64,".$photo;
         }
