@@ -85,7 +85,7 @@
                                         <br>
                                         <br>
                                         <!-- Add a button to open the modal with data-toggle and data-target attributes -->
-                                        <button class="btn btn-primary mx-auto d-block" type="button">Enrol</button>
+                                        <button class="btn btn-primary mx-auto d-block" type="button" onclick="document.location='courseView.php'">View Current Course</button>
                                     </p>
                                 </div>
                             </div>
