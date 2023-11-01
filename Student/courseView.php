@@ -64,7 +64,7 @@
                 <hr>
                 <div class="course_outline">
                     <?php for ($i=0; $i<15; $i++) { ?>
-                        <h5>Week <?php echo $i+1 ?></h5>
+                        <h5>Chapter <?php echo $i+1 ?></h5>
                         <div class="course_item"></div>
                         <br>
                     <?php } ?>
