@@ -20,7 +20,7 @@
         </li>
 
         <li>
-            <a href="Teacher/dashboard.php">
+            <a href="Teacher/index.php">
                 <span class="icon" >
                     <ion-icon name="folder-open-outline"></ion-icon>
                 </span>
