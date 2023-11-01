@@ -43,9 +43,9 @@
 	<link rel="stylesheet" href="../assets/CSS/sidebar.css">
 	<link rel="stylesheet" href="../assets/CSS/index.css">
     <link rel="stylesheet" href="../assets/CSS/footer.css">
+    <link rel="stylesheet" href="../assets/CSS/studentIndex.css">
     <link rel="icon" href="../assets/Images/logo.ico" />
-    <title>Course Selection - AlwaysAStudents! </title>
-    <title>Home</title>
+    <title>Dashboard - AlwaysAStudents! </title>
 </head>
 
 <body>
@@ -54,12 +54,24 @@
         <div class="main active">
             <?php include "../topnav.php" ?>
             <br>
-            <br>
-            <h2 class="Pagetitle"><b>Courses Selection</b></h2>
             <div class="container">
                 <br>
-                
+                <h4>Hello, <?php echo $name2 ?></h4>
                 <hr>
+                
+                <div class="announcement">
+                    <h4>Announcement:</h4>
+                    <div class="announcement_desc">
+                        <marquee>Welcome to AlwaysAStudents learning portal</marquee>
+                    </div>
+                </div>
+
+                <h4>My Enrolled Classes</h4>
+                <div class="button_course_parent">
+                        <button class="btn_course; activebtn" onclick="document.location=''">All</button>
+                        <button class="btn_course" onclick="document.location=''">Current Taken</button>
+                        <button class="btn_course" onclick="document.location=''">Passed</button>
+                </div>
                 <br>
                 <div class="row">
                     <?php for ($i = 1; $i <= 4; $i++) { ?>
@@ -73,54 +85,31 @@
                                         <br>
                                         <br>
                                         <!-- Add a button to open the modal with data-toggle and data-target attributes -->
-                                        <button class="btn btn-primary mx-auto d-block" type="button" data-toggle="modal" data-target="#enrolModal">Enrol</button>
+                                        <button class="btn btn-primary mx-auto d-block" type="button">Enrol</button>
                                     </p>
                                 </div>
                             </div>
                         </div>
                     <?php } ?>
                 </div>
+
+                <br>
+                <br>
+                <h4>Timeline</h4>
+                <div class="activity_due">
+                    <h6>No upcoming activities due</h6>
+                </div>
             </div>
 
-            <?php include "assistant.php"?>
-
+            <?php include "assistant.php" ?>
             <!-- Footer -->
             <br>
             <br>
             <?php include "../footer.php" ?>
         </div>
     </div>
-
-    <!-- Modal -->
-    <div class="modal fade" id="enrolModal" tabindex="-1" aria-labelledby="enrolModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="enrolModalLabel">Enrolment Form</h5>
-                    <button type="button" class="btn" data-dismiss="modal" aria-label="Close"><i class='bx bx-x'></i></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="mb-3">
-                            <img src="assets/Images/courseimgae.png" class="card-img-top" alt="...">
-							<br><br>
-							<h5>Title</h5>
-                        </div>
-                        <div class="mb-3">
-                            <p>Description....</p>
-                        </div>
-                        <div class="mb-3">
-                            <p>Price</p>
-                        </div>
-                        <div style="text-align:center" >
-                            <button type="submit" class="btn btn-primary">Buy Now</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    
+    
     <!-- Scripts should be included after the content -->
     <script src="../assets/js/main.js"></script>
 </body>
