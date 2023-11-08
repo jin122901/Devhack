@@ -43,9 +43,9 @@
 	<link rel="stylesheet" href="../assets/CSS/sidebar.css">
 	<link rel="stylesheet" href="../assets/CSS/index.css">
     <link rel="stylesheet" href="../assets/CSS/footer.css">
-    <link rel="stylesheet" href="../assets/CSS/courseView.css">
+    <link rel="stylesheet" href="../assets/CSS/premium.css">
     <link rel="icon" href="../assets/Images/logo.ico" />
-    <title>courseView - AlwaysAStudents! </title>
+    <title>Get Premium Now - AlwaysAStudents! </title>
 </head>
 
 <body>
@@ -56,17 +56,31 @@
             <br>
             <br>           
             <div class="container">
-                <div class="course_background">
-                    <img src="../assets/Images/courseViewbg.jpg" alt="">
-                    <h2><b>Course Name - courseView</b></h2>
-                </div>
+                <h2 style="text-align: center;"><b>Course Premium Subscription</b></h2>
                 <hr>
-                <div class="course_outline">
-                    <?php for ($i=0; $i<15; $i++) { ?>
-                        <h5>Chapter <?php echo $i+1 ?></h5>
-                        <div class="course_item"></div>
-                        <br>
-                    <?php } ?>
+                <div class="center_align"> 
+                    <div class="column_postPlans">
+                        <ul class="price_postpaid">
+                        <li class="post_head1">Free Plan</li>
+                        <li><b>Access basic function</b></li>
+                        <li><button type="button" class="button_post" disabled>Selected Plan</button></li>
+                        </ul>
+                    </div>
+
+                    <div class="column_postPlans">
+                        <ul class="price_postpaid">
+                        <li class="post_head2">Without Cert Premium</li>
+                        <li><button type="button" class="button_post">Select</button></li>
+                        </ul>
+                    </div>
+
+                    <div class="column_postPlans">
+                        <ul class="price_postpaid">
+                        <li class="post_head3">Certificate Premium</li>
+                        <li><b>2 hours of one-on-one tutor</b></li>
+                        <li><button type="button" class="button_post">Select</button></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 

@@ -38,7 +38,7 @@
         </li>
 
         <li>
-            <a href="#" >
+            <a href="premium.php" >
                 <span class="icon" >
                     <ion-icon name="diamond-outline"></ion-icon>
                 </span>

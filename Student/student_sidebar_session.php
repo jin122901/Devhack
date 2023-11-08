@@ -29,16 +29,16 @@
         </li>
 
         <li>
-            <a href="Student/course.php">
-                <span class="icon">
-                    <ion-icon name="cube-outline" ></ion-icon>
+            <a href="Student/course.php" >
+                <span class="icon" >
+                    <ion-icon name="folder-open-outline"></ion-icon>
                 </span>
                 <span class="title">Course Register</span>
             </a>
         </li>
 
         <li>
-            <a href="#" >
+            <a href="Student/premium.php" >
                 <span class="icon" >
                     <ion-icon name="diamond-outline"></ion-icon>
                 </span>
