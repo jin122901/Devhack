@@ -58,7 +58,8 @@
             <div class="container">
                 <div class="course_background">
                     <img src="../assets/Images/courseViewbg.jpg" alt="">
-                    <h2><b>Course Name - courseView</b></h2>
+                    <h2><b>Course Name - courseView</b> <button class="btn btn-primary vrStyle" onclick="window.location.href='vr.php'">VR</button></h2>
+                    
                 </div>
                 <hr>
                 <div class="course_outline">
